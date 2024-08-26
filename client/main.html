@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Table</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1>Supplier Form</h1>
+
+    <form id="supplierForm" onsubmit="submitForm(event)">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        
+        <label for="suppliername">Supplier Name:</label>
+        <input type="text" id="suppliername"  required>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" required>
+
+        <label for="suppliercontact">Supplier Contact:</label>
+        <input type ="text" id="suppliercontact"  required>
+
+        <label for="productname">Product Name:</label>
+        <input type="text" id="productname"  required>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <button id="displayAllStockBtn">Display All Stock</button>
+
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Date</th>
+                <th>Supplier Name</th>
+                <th>Location</th>
+                <th>Supplier Contact</th>
+                <th>Product Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="supplierTableBody">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
